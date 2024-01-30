@@ -1,1 +1,12 @@
-<p>valentine works!</p>
+<div class="container">
+    <header>
+      <h1>Will you go out with me?</h1>
+    </header>
+    <div class="content">
+      <img src="assets/teddy-bear.gif" alt="Teddy Bear" class="teddy-bear">
+      <div class="buttons">
+        <button class="yes" [class.random]="isYesButtonFocused" (mouseenter)="toggleYesButtonFocus(true)" (mouseleave)="toggleYesButtonFocus(false)">Yes</button>
+        <button class="no">No</button>
+      </div>
+    </div>
+</div>
