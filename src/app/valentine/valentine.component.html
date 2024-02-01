@@ -5,8 +5,10 @@
     <div class="content">
       <img src="assets/teddy-bear.gif" alt="Teddy Bear" class="teddy-bear">
       <div class="buttons">
-        <button class="yes" [class.random]="isYesButtonFocused" (mouseenter)="toggleYesButtonFocus(true)" (mouseleave)="toggleYesButtonFocus(false)">Yes</button>
-        <button class="no">No</button>
+        <button class="yes" [class.random]="isNoButtonFocused" 
+          (mouseenter)="toggleNoButtonFocus(true)" 
+          (mouseleave)="toggleNoButtonFocus(false)">No</button>
+        <button class="no">Yes</button>
       </div>
     </div>
 </div>
