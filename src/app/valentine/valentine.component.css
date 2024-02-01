@@ -1,12 +1,16 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: pink;
-    background-image: url('assets/background.jpg');
-    background-size: cover;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px; /* Set your specific width */
+    height: 700px; /* Set your specific height */
+    z-index: -1;
+    /* Adjust the path to the GIF in the assets folder */
+    background-image: url('https://tenor.com/view/couple-ilu-love-you-ya-jump-gif-16702974.gif');
+    background-size: contain; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   
   header {
