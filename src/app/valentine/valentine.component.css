@@ -77,7 +77,3 @@ body {
 .right-column, .left-column {
   transition: transform 0.3s;
 }
-
-.no-button {
-  cursor: pointer;
-}
