@@ -1,70 +1,75 @@
-.container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 700px; /* Set your specific width */
-    height: 700px; /* Set your specific height */
-    z-index: -1;
-    /* Adjust the path to the GIF in the assets folder */
-    background-image: url('https://tenor.com/view/couple-ilu-love-you-ya-jump-gif-16702974.gif');
-    background-size: contain; /* Adjust as needed */
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .content {
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-column,
+.right-column,
+.middle-column {
+    height: 100vh; /* Set the height as needed */
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-column {
+    width: 28%;
+}
+
+.right-column {
+    width: 28%;
+}
+
+.middle-column {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  
-  .teddy-bear {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 2rem;
-  }
-  
-  .buttons {
-    display: flex;
-  }
-  
-  button {
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .yes {
-    background-color: #ff69b4;
-    color: white;
-    margin-right: 1rem;
-  }
-  
-  .no {
-    background-color: white;
-    color: #ff69b4;
-    border: 2px solid #ff69b4;
-  }
-  
-  .random {
-    animation: randomColor 1s infinite;
-  }
-  
-  @keyframes randomColor {
-    0% {
-      background-color: #ff69b4;
-    }
-    50% {
-      background-color: #ff1493;
-    }
-    100% {
-      background-color: #ff69b4;
-    }
-  }
+}
+
+.middle-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Add this line */
+  z-index: 1; /* Add this line */
+  font-family: 'VT323', monospace;
+  font-size: 48px; /* Adjust font size as needed */
+}
+
+.middle-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Add this line */
+  z-index: 0; /* Add this line */
+}
+
+.gif {
+  max-width: 100%; /* Adjust as needed */
+  max-height: 100%; /* Adjust as needed */
+  width: 700px; /* Set your specific width */
+  height: 700px; /* Set your specific height */
+}
+
+.button {
+  font-family: 'VT323', monospace;
+  font-size: 24px; /* Adjust font size as needed */
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #007bff; /* Blue color for illustration */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 50%;
+  height: 15%;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue color for illustration */
+}

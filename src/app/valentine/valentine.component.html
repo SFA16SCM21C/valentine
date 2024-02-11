@@ -1,14 +1,18 @@
-<div class="container">
-    <header>
-      <h1>Will you go out with me?</h1>
-    </header>
-    <div class="content">
-      
-      <div class="buttons">
-        <button class="yes" [class.random]="isNoButtonFocused" 
-          (mouseenter)="toggleNoButtonFocus(true)" 
-          (mouseleave)="toggleNoButtonFocus(false)">No</button>
-        <button class="no">Yes</button>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="left-column">
+    <button class="button" (click)="onYesClick()">Yes</button>
+  </div>
+  <div class="middle-column">
+      <div class="middle-top" *ngIf="!youAreMine">{{ header }}</div>
+      <div class="middle-top" *ngIf="youAreMine">{{ message }}</div>
+      <div class="middle-bottom">
+          <img src="https://tenor.com/view/couple-ilu-love-you-ya-jump-gif-16702974.gif" alt="GIF" class="gif">
       </div>
-    </div>
-</div>
+  </div>
+  <div [ngClass]="noButtonClass" (click)="onNoClick()" class="no-button">
+    <button class="button">No</button>
+  </div>
+</body>

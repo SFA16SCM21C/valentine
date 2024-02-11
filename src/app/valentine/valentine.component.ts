@@ -6,9 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./valentine.component.css']
 })
 export class ValentineComponent {
-  isNoButtonFocused: boolean = false;
 
-  toggleNoButtonFocus(isFocused: boolean) {
-    this.isNoButtonFocused = isFocused;
+  header: string = "Will you be my valentine?";
+  message: string = "You are mine now!";
+  youAreMine: boolean = false;
+
+  onYesClick() {
+    this.youAreMine = true;
+  }
+
+  onNoClick() {
+    // Add logic to change the position of the buttons here
   }
 }
