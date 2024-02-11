@@ -73,3 +73,27 @@ body {
 .button:hover {
   background-color: #0056b3; /* Darker blue color for illustration */
 }
+
+.right-column, .left-column {
+  transition: transform 0.3s;
+}
+
+.no-button {
+  cursor: pointer;
+}
+
+.no-button.left-column {
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.no-button.right-column {
+  transform: translateX(50%) translateY(-50%);
+}
+
+.no-button.left-column:hover {
+  transform: translateX(-50%) translateY(-50%) scale(1.2);
+}
+
+.no-button.right-column:hover {
+  transform: translateX(50%) translateY(-50%) scale(1.2);
+}

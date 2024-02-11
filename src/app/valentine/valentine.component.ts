@@ -16,6 +16,6 @@ export class ValentineComponent {
   }
 
   onNoClick() {
-    // Add logic to change the position of the buttons here
+    this.noButtonClass = this.noButtonClass === "right-column" ? "left-column" : "right-column";
   }
 }
