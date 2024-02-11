@@ -10,6 +10,8 @@ export class ValentineComponent {
   header: string = "Will you be my valentine?";
   message: string = "You are mine now!";
   youAreMine: boolean = false;
+  noButtonDisabled: boolean = false;
+
 
   onYesClick() {
     this.youAreMine = true;

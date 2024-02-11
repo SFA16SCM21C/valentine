@@ -12,7 +12,7 @@
           <img src="https://tenor.com/view/couple-ilu-love-you-ya-jump-gif-16702974.gif" alt="GIF" class="gif">
       </div>
   </div>
-  <div class="right-column" (click)="onNoClick()">
-    <button class="button">No</button>
+  <div class="right-column">
+    <button class="button" (click)="onNoClick()" [disabled]="noButtonDisabled" (mouseover)="noButtonDisabled = true" (mouseout)="noButtonDisabled = false">No</button>
   </div>
 </body>
