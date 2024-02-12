@@ -1,3 +1,5 @@
+/* main page styling */
+
 body {
   margin: 0;
   padding: 0;
@@ -5,6 +7,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+
+/* column or section styling */
 
 .left-column,
 .right-column,
@@ -51,6 +55,8 @@ body {
   z-index: 0; /* Add this line */
 }
 
+/* gif styling */
+
 .gif {
   padding-top: 100px;
   max-width: 100%; /* Adjust as needed */
@@ -58,6 +64,8 @@ body {
   width: 700px; /* Set your specific width */
   height: 400px; /* Set your specific height */
 }
+
+/* column or section styling */
 
 .button {
   font-family: 'VT323', monospace;
@@ -73,22 +81,27 @@ body {
   border-radius: 15px; /* Rounded corners */
 }
 
+.button:hover {
+  background-color: lightgrey; /* Darker blue color for illustration */
+}
+
+.button:disabled {
+  opacity: 0.5; /* Reduced opacity for disabled state */
+  cursor: not-allowed; /* Change cursor to not-allowed */
+}
+
 .button-yes {
   background-color: #f50ff1; /* Blue color for illustration */
   color: white;
 }
 
+.button-yes:hover {
+  background-color: darkorchid; /* Darker blue color for illustration */
+}
+
 .button-disabled {
   background-color: darkgray;
   color: black;
-}
-
-.button:hover {
-  background-color: lightgrey; /* Darker blue color for illustration */
-}
-
-.button-yes:hover {
-  background-color: darkorchid; /* Darker blue color for illustration */
 }
 
 .right-column, .left-column {
@@ -99,10 +112,7 @@ body {
   cursor: not-allowed; /* Change cursor to not-allowed */
 }
 
-.button:disabled {
-  opacity: 0.5; /* Reduced opacity for disabled state */
-  cursor: not-allowed; /* Change cursor to not-allowed */
-}
+/* blobl styling */
 
 .blob {
   width: 300px;
@@ -132,3 +142,5 @@ body {
     border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
   }
 }
+
+/* text animation styling */
