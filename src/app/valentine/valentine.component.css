@@ -39,7 +39,8 @@ body {
   position: relative; /* Add this line */
   z-index: 1; /* Add this line */
   font-family: 'VT323', monospace;
-  font-size: 60px; /* Adjust font size as needed */
+  font-size: 70px; /* Adjust font size as needed */
+  font-weight: bolder;
 }
 
 .middle-bottom {
@@ -59,13 +60,16 @@ body {
 
 .button {
   font-family: 'VT323', monospace;
+  width: 50%;
+  height: 15%;
   font-size: 24px; /* Adjust font size as needed */
   padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #007bff; /* Blue color for illustration */
+  color: white;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
-  width: 50%;
-  height: 15%;
+  border-radius: 15px; /* Rounded corners */
 }
 
 .button-yes {
@@ -91,5 +95,10 @@ body {
 }
 
 .button-disabled:disabled:hover {
+  cursor: not-allowed; /* Change cursor to not-allowed */
+}
+
+.button:disabled {
+  opacity: 0.5; /* Reduced opacity for disabled state */
   cursor: not-allowed; /* Change cursor to not-allowed */
 }
