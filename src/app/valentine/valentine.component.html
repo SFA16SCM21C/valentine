@@ -3,7 +3,7 @@
 </head>
 <body>
   <div class="left-column">
-    <button class="button button-yes" (click)="onYesClick()">Yes</button>
+    <button class="button button-yes blob" (click)="onYesClick()">Yes</button>
   </div>
   <div class="middle-column">
       <div class="middle-top" *ngIf="!youAreMine">{{ header }}</div>
@@ -13,7 +13,7 @@
       </div>
   </div>
   <div class="right-column">
-    <button class="button button-disabled" [disabled]="isNoButtonDisabled" (mouseenter)="updateNoButtonText(true)" (mouseleave)="updateNoButtonText(false)">
+    <button class="button button-disabled blob" [disabled]="isNoButtonDisabled" (mouseenter)="updateNoButtonText(true)" (mouseleave)="updateNoButtonText(false)">
         {{ noButtonText }}
     </button>
   </div>
