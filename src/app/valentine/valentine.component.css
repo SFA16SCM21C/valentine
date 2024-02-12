@@ -52,10 +52,11 @@ body {
 }
 
 .gif {
+  padding-top: 100px;
   max-width: 100%; /* Adjust as needed */
   max-height: 100%; /* Adjust as needed */
   width: 700px; /* Set your specific width */
-  height: 700px; /* Set your specific height */
+  height: 400px; /* Set your specific height */
 }
 
 .button {
@@ -64,7 +65,7 @@ body {
   height: 15%;
   font-size: 24px; /* Adjust font size as needed */
   padding: 10px 20px; /* Adjust padding as needed */
-  background-color: #007bff; /* Blue color for illustration */
+  background-color: #de34eb; /* Blue color for illustration */
   color: white;
   border: none;
   cursor: pointer;
@@ -73,7 +74,7 @@ body {
 }
 
 .button-yes {
-  background-color: #007bff; /* Blue color for illustration */
+  background-color: #f50ff1; /* Blue color for illustration */
   color: white;
 }
 
