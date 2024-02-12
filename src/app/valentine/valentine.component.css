@@ -39,7 +39,7 @@ body {
   position: relative; /* Add this line */
   z-index: 1; /* Add this line */
   font-family: 'VT323', monospace;
-  font-size: 48px; /* Adjust font size as needed */
+  font-size: 60px; /* Adjust font size as needed */
 }
 
 .middle-bottom {
@@ -61,8 +61,6 @@ body {
   font-family: 'VT323', monospace;
   font-size: 24px; /* Adjust font size as needed */
   padding: 10px 20px; /* Adjust padding as needed */
-  background-color: #007bff; /* Blue color for illustration */
-  color: white;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -70,10 +68,28 @@ body {
   height: 15%;
 }
 
+.button-yes {
+  background-color: #007bff; /* Blue color for illustration */
+  color: white;
+}
+
+.button-disabled {
+  background-color: darkgray;
+  color: black;
+}
+
 .button:hover {
-  background-color: #0056b3; /* Darker blue color for illustration */
+  background-color: lightgrey; /* Darker blue color for illustration */
+}
+
+.button-yes:hover {
+  background-color: darkorchid; /* Darker blue color for illustration */
 }
 
 .right-column, .left-column {
   transition: transform 0.3s;
+}
+
+.button-disabled:disabled:hover {
+  cursor: not-allowed; /* Change cursor to not-allowed */
 }

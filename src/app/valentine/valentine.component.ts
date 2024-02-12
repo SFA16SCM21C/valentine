@@ -10,14 +10,19 @@ export class ValentineComponent {
   header: string = "Will you be my valentine?";
   message: string = "You are mine now!";
   youAreMine: boolean = false;
-  noButtonDisabled: boolean = false;
+  isNoButtonDisabled: boolean = false;
+  noButtonText: string = 'No';
 
 
   onYesClick() {
     this.youAreMine = true;
   }
 
-  onNoClick() {
-    
+  updateNoButtonText(isHovered: boolean) {
+    if (isHovered) {
+      this.noButtonText = "You don't have a choice";
+    } else {
+      this.noButtonText = 'No';
+    }
   }
 }
