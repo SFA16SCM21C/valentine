@@ -10,7 +10,7 @@
       <div class="middle-bottom">
         <img src="https://tenor.com/view/anime-girl-gif-26597563.gif" alt="GIF" class="gif">
         <div style="margin-top: 100px">
-          <button class="button button-yes btn-margin-right blob" (click)="onYesClick()">Yes</button>
+          <button class="button button-yes button-margin blob" (click)="onYesClick()">Yes</button>
           <button class="button button-disabled blob" [disabled]="isNoButtonDisabled" (mouseenter)="updateNoButtonText(true)" (mouseleave)="updateNoButtonText(false)">
             {{ noButtonText }}
         </button>
