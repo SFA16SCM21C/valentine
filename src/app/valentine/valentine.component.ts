@@ -20,7 +20,7 @@ export class ValentineComponent {
 
   updateNoButtonText(isHovered: boolean) {
     if (isHovered) {
-      this.noButtonText = "You think you have a choice?? (Think again)";
+      this.noButtonText = "Think again!!!!";
     } else {
       this.noButtonText = 'No';
     }
