@@ -58,10 +58,10 @@ body {
 /* gif styling */
 
 .gif {
-  padding-top: 100px;
+  padding-top: 50px;
   max-width: 100%; /* Adjust as needed */
   max-height: 100%; /* Adjust as needed */
-  width: 700px; /* Set your specific width */
+  width: 500px; /* Set your specific width */
   height: 400px; /* Set your specific height */
 }
 
